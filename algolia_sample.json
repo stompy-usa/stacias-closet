@@ -1,0 +1,3630 @@
+[
+  {
+    "buyingCodeId": 2,
+    "rating": 4.5,
+    "refinementColor": "Grey",
+    "trend": [],
+    "trueColor": "RIVERSTONE GREY",
+    "designersNotes": "We took the elastic-waist&nbsp;pant&nbsp;and elevated&nbsp;it. These are high-rise pants beloved for their unmatched comfort and refined look.&nbsp;They&rsquo;re&nbsp;made&nbsp;with Crepette&trade; &mdash; our one-of-a-kind Japanese crepe fabric beloved for its subtle texture, breezy drape and the fact that it basically never wrinkles.",
+    "rise": [
+      "High Rise"
+    ],
+    "fabric": [
+      "Crepette\u2122"
+    ],
+    "masterId": "118495",
+    "productLabel": "3 Heights",
+    "seoProductDesc": "Japanese crepe relaxed wider-leg pull-on pants",
+    "cmScore": 356405729876.18,
+    "bucketMasterATS2": 2,
+    "subDept": [
+      "Pant"
+    ],
+    "inseam": [
+      "30\""
+    ],
+    "objectID": "118495-36284_duplicate",
+    "selectableColors": [
+      {
+        "colorIds": {
+          "18891": [
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f",
+            "s26_a06_118495_18891_off_a",
+            "s26_a06_118495_18891_off_b",
+            "s26_a06_118495_18891_off_c",
+            "s26_a06_118495_18891_off_h"
+          ],
+          "18891_2": [
+            "s26_a06_128970_18891_off_a",
+            "s26_a06_128970_18891_off_b",
+            "s26_a06_128970_18891_off_c",
+            "s26_a06_128970_18891_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Brown",
+        "shippableSizes": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "sizeRun": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "swatch": "s26_a06_118495_18891_sw",
+        "value": "RICH MOCHA BROWN"
+      },
+      {
+        "colorIds": {
+          "1274": [
+            "s26_a06_118495_1274_on_a",
+            "s26_a06_118495_1274_on_b",
+            "s26_a06_118495_1274_on_c",
+            "s26_a06_118495_1274_on_d",
+            "s26_a06_118495_1274_on_e",
+            "s26_a06_118495_1274_on_f",
+            "s26_a06_118495_1274_off_a",
+            "s26_a06_118495_1274_off_b",
+            "s26_a06_118495_1274_off_c",
+            "s26_a06_118495_1274_off_h"
+          ],
+          "1274_1": [
+            "s26_a06_128971_1274_off_a",
+            "s26_a06_128971_1274_off_b",
+            "s26_a06_128971_1274_off_c",
+            "s26_a06_128971_1274_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ],
+          "1274_2": [
+            "s26_a06_128970_1274_off_a",
+            "s26_a06_128970_1274_off_b",
+            "s26_a06_128970_1274_off_c",
+            "s26_a06_128970_1274_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Black",
+        "shippableSizes": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "sizeRun": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "swatch": "s26_a06_118495_1274_sw",
+        "value": "BLACK"
+      },
+      {
+        "colorIds": {
+          "11420": [
+            "s26_a06_118495_11420_on_a",
+            "s26_a06_118495_11420_on_b",
+            "s26_a06_118495_11420_on_c",
+            "s26_a06_118495_11420_on_d",
+            "s26_a06_118495_11420_on_e",
+            "s26_a06_118495_11420_on_f",
+            "s26_a06_118495_11420_off_a",
+            "s26_a06_118495_11420_off_b",
+            "s26_a06_118495_11420_off_c",
+            "s26_a06_118495_11420_off_h"
+          ],
+          "11420_1": [
+            "s26_a06_128971_11420_off_a",
+            "s26_a06_128971_11420_off_b",
+            "s26_a06_128971_11420_off_c",
+            "s26_a06_128971_11420_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ],
+          "11420_2": [
+            "s26_a06_128970_11420_off_a",
+            "s26_a06_128970_11420_off_b",
+            "s26_a06_128970_11420_off_c",
+            "s26_a06_128970_11420_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "White",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          ""
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          ""
+        ],
+        "swatch": "s26_a06_118495_11420_sw",
+        "value": "LIGHT BIRCH"
+      },
+      {
+        "colorIds": {
+          "10230": [
+            "s26_a06_118495_10230_on_a",
+            "s26_a06_118495_10230_on_b",
+            "s26_a06_118495_10230_on_c",
+            "s26_a06_118495_10230_on_d",
+            "s26_a06_118495_10230_on_e",
+            "s26_a06_118495_10230_off_a",
+            "s26_a06_118495_10230_off_b",
+            "s26_a06_118495_10230_off_c",
+            "s26_a06_118495_10230_off_h"
+          ],
+          "10230_2": [
+            "s26_a06_128970_10230_off_a",
+            "s26_a06_128970_10230_off_b",
+            "s26_a06_128970_10230_off_c",
+            "s26_a06_128970_10230_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          ""
+        ],
+        "swatch": "s26_a06_118495_10230_sw",
+        "value": "ADMIRAL"
+      },
+      {
+        "colorIds": {
+          "30654": [
+            "s26_a06_118495_30654_on_a",
+            "s26_a06_118495_30654_on_b",
+            "s26_a06_118495_30654_on_c",
+            "s26_a06_118495_30654_on_d",
+            "s26_a06_118495_30654_on_e",
+            "s26_a06_118495_30654_on_f",
+            "s26_a06_118495_30654_off_a",
+            "s26_a06_118495_30654_off_b",
+            "s26_a06_118495_30654_off_c",
+            "s26_a06_118495_30654_off_h"
+          ],
+          "30654_2": [
+            "s26_a06_128970_30654_off_a",
+            "s26_a06_128970_30654_off_b",
+            "s26_a06_128970_30654_off_c",
+            "s26_a06_128970_30654_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Grey",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          ""
+        ],
+        "swatch": "s26_a06_118495_30654_sw",
+        "value": "NOMAD TAUPE"
+      },
+      {
+        "colorIds": {
+          "36284": [
+            "s26_a06_118495_36284_on_a",
+            "s26_a06_118495_36284_on_b",
+            "s26_a06_118495_36284_on_c",
+            "s26_a06_118495_36284_on_d",
+            "s26_a06_118495_36284_on_e",
+            "s26_a06_118495_36284_off_a",
+            "s26_a06_118495_36284_off_b",
+            "s26_a06_118495_36284_off_c",
+            "s26_a06_118495_36284_off_h"
+          ],
+          "36284_1": [
+            "s26_a06_128970_36284_off_a",
+            "s26_a06_128970_36284_off_b",
+            "s26_a06_128970_36284_off_c",
+            "s26_a06_128970_36284_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Grey",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a06_118495_36284_sw",
+        "value": "RIVERSTONE GREY"
+      },
+      {
+        "colorIds": {
+          "36215": [
+            "s26_a06_118495_36215_on_a",
+            "s26_a06_118495_36215_on_b",
+            "s26_a06_118495_36215_on_c",
+            "s26_a06_118495_36215_on_d",
+            "s26_a06_118495_36215_on_e",
+            "s26_a06_118495_36215_off_a",
+            "s26_a06_118495_36215_off_b",
+            "s26_a06_118495_36215_off_c",
+            "s26_a06_118495_36215_off_h"
+          ],
+          "36215_1": [
+            "f25_a06_128971_36215_off_a",
+            "f25_a06_128971_36215_off_b",
+            "f25_a06_128971_36215_off_c",
+            "f25_a06_128971_36215_off_h",
+            "s26_a06_118495_18891_on_a",
+            "s26_a06_118495_18891_on_b",
+            "s26_a06_118495_18891_on_c",
+            "s26_a06_118495_18891_on_d",
+            "s26_a06_118495_18891_on_e",
+            "s26_a06_118495_18891_on_f"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Brown",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a06_118495_36215_sw",
+        "value": "FOLIO BROWN"
+      },
+      {
+        "colorIds": {
+          "30751": [
+            "s26_a06_118495_30751_on_a",
+            "s26_a06_118495_30751_on_b",
+            "s26_a06_118495_30751_on_c",
+            "s26_a06_118495_30751_on_d",
+            "s26_a06_118495_30751_on_e",
+            "s26_a06_118495_30751_on_f",
+            "s26_a06_118495_30751_off_a",
+            "s26_a06_118495_30751_off_b",
+            "s26_a06_118495_30751_off_c",
+            "s26_a06_118495_30751_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "L",
+          "XL",
+          ""
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          ""
+        ],
+        "swatch": "s26_a06_118495_30751_sw",
+        "value": "DARK NIGHT NAVY"
+      },
+      {
+        "colorIds": {
+          "2819": [
+            "s26_a06_118495_2819_on_a",
+            "s26_a06_118495_2819_on_b",
+            "s26_a06_118495_2819_on_c",
+            "s26_a06_118495_2819_on_d",
+            "s26_a06_118495_2819_on_e",
+            "s26_a06_118495_2819_on_f",
+            "s26_a06_118495_2819_off_a",
+            "s26_a06_118495_2819_off_b",
+            "s26_a06_118495_2819_off_c",
+            "s26_a06_118495_2819_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Green",
+        "shippableSizes": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "sizeRun": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS",
+          ""
+        ],
+        "swatch": "s26_a06_118495_2819_sw",
+        "value": "DARK OLIVE"
+      },
+      {
+        "colorIds": {
+          "1351": [
+            "s26_a06_118495_1351_on_a",
+            "s26_a06_118495_1351_on_b",
+            "s26_a06_118495_1351_on_c",
+            "s26_a06_118495_1351_on_d",
+            "s26_a06_118495_1351_on_e",
+            "s26_a06_118495_1351_on_f",
+            "s26_a06_118495_1351_off_a",
+            "s26_a06_118495_1351_off_b",
+            "s26_a06_118495_1351_off_c",
+            "s26_a06_118495_1351_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Grey",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a06_118495_1351_sw",
+        "value": "DARK GREY"
+      },
+      {
+        "colorIds": {
+          "34050": [
+            "s26_a06_118495_34050_on_a",
+            "s26_a06_118495_34050_on_b",
+            "s26_a06_118495_34050_on_c",
+            "s26_a06_118495_34050_on_d",
+            "s26_a06_118495_34050_on_e",
+            "s26_a06_118495_34050_on_f",
+            "s26_a06_118495_34050_off_a",
+            "s26_a06_118495_34050_off_b",
+            "s26_a06_118495_34050_off_c",
+            "s26_a06_118495_34050_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Brown",
+        "shippableSizes": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS"
+        ],
+        "sizeRun": [
+          "XL",
+          "L",
+          "M",
+          "S",
+          "XS",
+          "2XS"
+        ],
+        "swatch": "s26_a06_118495_34050_sw",
+        "value": "MARCONA BEIGE"
+      },
+      {
+        "colorIds": {
+          "35466": [
+            "f25_a06_118495_35466_on_a",
+            "f25_a06_118495_35466_on_b",
+            "f25_a06_118495_35466_on_c",
+            "f25_a06_118495_35466_on_d",
+            "f25_a06_118495_35466_on_e",
+            "f25_a06_118495_35466_off_a",
+            "f25_a06_118495_35466_off_b",
+            "f25_a06_118495_35466_off_c",
+            "f25_a06_118495_35466_off_d",
+            "f25_a06_118495_35466_off_h"
+          ]
+        },
+        "onSale": true,
+        "prices": [
+          {
+            "prices": [
+              138
+            ],
+            "source": "usd-list-prices"
+          },
+          {
+            "prices": [
+              96.6
+            ],
+            "source": "usd-sale-prices"
+          }
+        ],
+        "refColor": "Green",
+        "shippableSizes": [
+          "2XS"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XL"
+        ],
+        "swatch": "f25_a06_118495_35466_sw",
+        "value": "PRIVATE GREEN",
+        "saleIndex": 1
+      }
+    ],
+    "storeAvailability": [
+      {
+        "id": "2515",
+        "a": [
+          "18891:XL",
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:2XS|L|M|S|XL"
+        ]
+      },
+      {
+        "id": "2831",
+        "a": [
+          "18891:XL",
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2161",
+        "a": [
+          "18891:L",
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654|36284:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2453",
+        "a": [
+          "18891:L",
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "36215:2XS|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2616",
+        "a": [
+          "18891|36284_1:M",
+          "1274|11420:|2XS|L|M|S|XL|XS",
+          "30751:|2XS|L|S|XS",
+          "30654:2XS|L|M|S|XL",
+          "2819:L",
+          "34050:XS",
+          "36215|36284:2XS|L|M|S|XL|XS",
+          "10230_2:M|S",
+          "1274_2:M|XL"
+        ]
+      },
+      {
+        "id": "2471",
+        "a": [
+          "18891:M",
+          "1274:2XS|L|M|XL|XS",
+          "30751:2XS|XS",
+          "11420:2XS|L|S|XL",
+          "1351:XS",
+          "36215:L|M|S|XL|XS",
+          "36284:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2653",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XS",
+          "30654:S|XL",
+          "35466:XL",
+          "36284:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2652",
+        "a": [
+          "1274|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "11420:2XS|L|M|XL|XS",
+          "36215:L|XL|XS",
+          "10230_2:S"
+        ]
+      },
+      {
+        "id": "2162",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:2XS|L|M|S|XL"
+        ]
+      },
+      {
+        "id": "2614",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XS",
+          "36215:L|M|XS",
+          "36284:2XS|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2612",
+        "a": [
+          "1274|30654|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "34050:2XS|L|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2615",
+        "a": [
+          "1274|30654|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "34050:2XS|L|XL|XS"
+        ]
+      },
+      {
+        "id": "2611",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751|34050:2XS|L|XL|XS",
+          "30654:2XS|L|M|S|XL",
+          "36284_1:L"
+        ]
+      },
+      {
+        "id": "2617",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XS"
+        ]
+      },
+      {
+        "id": "2603",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS"
+        ]
+      },
+      {
+        "id": "2602",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "34050:S",
+          "35466:2XS"
+        ]
+      },
+      {
+        "id": "2164",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "35466:2XS"
+        ]
+      },
+      {
+        "id": "2601",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "34050|1274_2:2XS"
+        ]
+      },
+      {
+        "id": "2642",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS"
+        ]
+      },
+      {
+        "id": "2641",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "34050|10230:S",
+          "36215:2XS|L|S|XL|XS",
+          "36284:M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2671",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2722",
+        "a": [
+          "1274:2XS|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "11420:2XS|L|S|XL|XS",
+          "36215:2XS|L|M|S|XS",
+          "36284:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2751",
+        "a": [
+          "1274|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:2XS|M|S|XL|XS",
+          "11420:2XS|L|M|XL|XS",
+          "36284:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2757",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "36215:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2753",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "36284:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2758",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "36284:2XS|L|S|XL|XS",
+          "10230_2:S"
+        ]
+      },
+      {
+        "id": "2756",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|XL|XS",
+          "36215|36284:2XS|L|S|XL|XS",
+          "36284_1:XS"
+        ]
+      },
+      {
+        "id": "2643",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|M|S",
+          "2819:XL"
+        ]
+      },
+      {
+        "id": "2752",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2755",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "36215:2XS|M|S|XL|XS",
+          "36284:2XS|L|M|XL|XS",
+          "36284_1:2XS"
+        ]
+      },
+      {
+        "id": "2754",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XS",
+          "36284:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2541",
+        "a": [
+          "1274|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S",
+          "11420:2XS|L|M|XL|XS",
+          "36284_1|1274_2:XS"
+        ]
+      },
+      {
+        "id": "2521",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:2XS|L|M|S|XL"
+        ]
+      },
+      {
+        "id": "2711",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:2XS|XL",
+          "36215:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2542",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "34050:XS",
+          "1351:S",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2551",
+        "a": [
+          "1274|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "11420:2XS|L|M|S|XS",
+          "1351:L"
+        ]
+      },
+      {
+        "id": "2517",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|S|XL|XS",
+          "34050:S|XL|XS",
+          "1274_2:2XS|XL"
+        ]
+      },
+      {
+        "id": "2516",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "35466:2XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2514",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2519",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|M|S"
+        ]
+      },
+      {
+        "id": "2531",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654|2819|10230_2:XL"
+        ]
+      },
+      {
+        "id": "2532",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2561",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S"
+        ]
+      },
+      {
+        "id": "2804",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS"
+        ]
+      },
+      {
+        "id": "2802",
+        "a": [
+          "1274|30654|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|M|XL|XS",
+          "11420_2:XL"
+        ]
+      },
+      {
+        "id": "2807",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|XL|XS",
+          "36284:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2806",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "36284:2XS|L|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2803",
+        "a": [
+          "1274:2XS|L|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "11420:2XS|L|M|S|XS",
+          "36215|36284:2XS|L|M|S|XL|XS",
+          "11420_1:2XS"
+        ]
+      },
+      {
+        "id": "2805",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:XL|XS"
+        ]
+      },
+      {
+        "id": "2472",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "1351:L",
+          "36284:2XS|L|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2822",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XS",
+          "30654:XL",
+          "36215:2XS|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2821",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:L|M|S|XL",
+          "36215:L|M|S|XL|XS",
+          "36284:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2401",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30654|36215:L|M|S|XL|XS",
+          "10230:2XS"
+        ]
+      },
+      {
+        "id": "2402",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2458",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "35466:2XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2421",
+        "a": [
+          "1274|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|S|XS",
+          "11420:2XS|M|S|XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2457",
+        "a": [
+          "1274|11420|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "30654:M|S|XL|XS",
+          "36215:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2460",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|M|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "1351|10230:M",
+          "36215:2XS|L|M|S|XS",
+          "36284:2XS|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2454",
+        "a": [
+          "1274:2XS|L|M|XL",
+          "11420:2XS|M|XS",
+          "36215:L|XL",
+          "36284:2XS|L|XL|XS",
+          "10230_2:L|M|XS"
+        ]
+      },
+      {
+        "id": "2451",
+        "a": [
+          "1274|11420|36215:2XS|L|M|S|XL|XS",
+          "30751:XL",
+          "30654:L|M|XL|XS",
+          "36284:2XS|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2459",
+        "a": [
+          "1274|36215:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XS",
+          "30654:L|M|S|XL|XS",
+          "11420|36284:2XS|L|M|S|XS",
+          "36284_1:S"
+        ]
+      },
+      {
+        "id": "2455",
+        "a": [
+          "1274|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL",
+          "30654:L|M|S|XL|XS",
+          "11420:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2417",
+        "a": [
+          "1274:2XS|L|M|S|XL",
+          "30751:2XS|XS",
+          "30654:XL",
+          "11420:2XS|L|M|S|XL|XS",
+          "34050:S",
+          "36215|36284:2XS|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2414",
+        "a": [
+          "1274:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS",
+          "11420:2XS|M|S|XL|XS",
+          "36215:2XS|L|M|S|XS",
+          "36284:2XS|L|S|XL|XS",
+          "36284_1:XS"
+        ]
+      },
+      {
+        "id": "2411",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|XS",
+          "36215:L|M|S|XL|XS",
+          "36284:2XS|L|M|S|XL"
+        ]
+      },
+      {
+        "id": "2415",
+        "a": [
+          "1274:2XS|M|S|XL|XS",
+          "30751:2XS|XL|XS",
+          "11420:2XS|L|M|S|XL|XS",
+          "36215:2XS|L|M|S|XS",
+          "36284:L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2416",
+        "a": [
+          "1274|11420|36215|36284:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|XL|XS"
+        ]
+      },
+      {
+        "id": "2481",
+        "a": [
+          "1274|11420:2XS|L|M|S|XL|XS",
+          "30751:2XS|L|S|XL|XS",
+          "36215:L|M|S|XL|XS",
+          "36284:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2651",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:2XS|S|XL|XS",
+          "11420:2XS|L|M|S|XL|XS",
+          "36215:L|M|S|XL|XS",
+          "36284:2XS|M|S|XL|XS",
+          "36284_1:XS"
+        ]
+      },
+      {
+        "id": "2721",
+        "a": [
+          "1274|11420:2XS|L|M|S|XS",
+          "30751:2XS|L|XL|XS",
+          "36215:2XS|L|M|S|XL|XS",
+          "36284:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2701",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "30751:2XS|L|XS",
+          "11420|36215|36284:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2518",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S",
+          "11420|36215|36284:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2491",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "30751:2XS|XL|XS",
+          "11420|36215|36284:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2452",
+        "a": [
+          "1274:2XS|L|S|XS",
+          "30751:2XS|L|XL|XS",
+          "11420|36284:2XS|L|M|S|XL|XS",
+          "36215:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2456",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "30751:2XS|L|XL|XS",
+          "30654:L|M|S|XL|XS",
+          "11420:2XS|L|M|S|XL|XS",
+          "36215:2XS|L|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2492",
+        "a": [
+          "1274:|2XS|M|S|XS",
+          "30751:2XS|L|XL|XS",
+          "11420:|2XS|L|M|S|XL|XS",
+          "35466:2XS|XL",
+          "36215:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2412",
+        "a": [
+          "1274:M|XS"
+        ]
+      }
+    ],
+    "style": [
+      "Full",
+      "Height"
+    ],
+    "vgDiscountGroup": "Aritzia",
+    "_tags": [
+      "id:118495-36284"
+    ],
+    "buyingCode": "COE",
+    "length": [
+      "Full",
+      "Height",
+      "54"
+    ],
+    "orderable": true,
+    "sizeRun": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "warmth": [],
+    "bucketRevenue30Days": 6,
+    "articleGeneric": "118495",
+    "brand": "Aritzia",
+    "color": "36284",
+    "articleFit": [
+      "Original",
+      "Relaxed"
+    ],
+    "sustainability": [],
+    "wash": [],
+    "reviewCount": 348,
+    "distinctId": "118495-36284",
+    "slug": "the-lodge-pant%E2%84%A2/118495.html",
+    "stretch": [],
+    "primaryCategoryId": "pants",
+    "name": "",
+    "searchableIfUnavailable": false,
+    "shippableSizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "neckline": [],
+    "legShape": [
+      "Wider"
+    ],
+    "activity": [],
+    "feature": [],
+    "sleeve": [],
+    "catAttributes": {
+      "clothing": {
+        "PLPVideo": "https://assets.aritzia.com/video/upload/v1772477638/SS26_118495_36284_PLP.mp4"
+      },
+      "pants": {
+        "PLPVideo": "https://assets.aritzia.com/video/upload/v1772477638/SS26_118495_36284_PLP.mp4"
+      }
+    },
+    "occasion": [],
+    "readyToShip": true,
+    "stitching": [],
+    "categories": [
+      "clothing",
+      "pants"
+    ],
+    "isDefaultColor": false,
+    "onSale": false,
+    "seasonRank": 20260,
+    "hierarchicalCategories": {
+      "0": "All Clothing",
+      "1": "All Clothing > Pants"
+    },
+    "price": {
+      "min": 96.6,
+      "max": 138,
+      "discount": 30
+    },
+    "defaultImage": "s26_a06_118495_18891_on_a",
+    "c_displayName": "The Lodge Pant\u2122 - Crepette\u2122",
+    "cmScore2": 0,
+    "_highlightResult": {
+      "primaryCategoryId": {
+        "value": "pants",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "categories": [
+        {
+          "value": "clothing",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "pants",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "brand": {
+        "value": "Aritzia",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "color": {
+        "value": "36284",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "fabric": [
+        {
+          "value": "Crepette\u2122",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "length": [
+        {
+          "value": "Full",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "Height",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "54",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "masterId": {
+        "value": "118495",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "productLabel": {
+        "value": "3 Heights",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "refinementColor": {
+        "value": "Grey",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "rise": [
+        {
+          "value": "High Rise",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "subDept": [
+        {
+          "value": "Pant",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "seoProductDesc": {
+        "value": "Japanese crepe relaxed wider-leg pull-on pants",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "trueColor": {
+        "value": "RIVERSTONE GREY",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "c_displayName": {
+        "value": "The Lodge Pant\u2122 - Crepette\u2122",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "designersNotes": {
+        "value": "We took the elastic-waist&nbsp;pant&nbsp;and elevated&nbsp;it. These are high-rise pants beloved for their unmatched comfort and refined look.&nbsp;They&rsquo;re&nbsp;made&nbsp;with Crepette&trade; &mdash; our one-of-a-kind Japanese crepe fabric beloved for its subtle texture, breezy drape and the fact that it basically never wrinkles.",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "articleGeneric": {
+        "value": "118495",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    },
+    "unsellable": 1
+  },
+  {
+    "orderable": true,
+    "readyToShip": true,
+    "stretch": [],
+    "wash": [],
+    "defaultImage": "s26_a02_129890_36342_on_a",
+    "bucketRevenue30Days": 3,
+    "feature": [],
+    "name": "",
+    "occasion": [],
+    "unsellable": 1,
+    "inseam": [],
+    "articleGeneric": "129890",
+    "catAttributes": {},
+    "brand": "Wilfred",
+    "slug": "italic-poplin-blouse/129890.html",
+    "trend": [],
+    "trueColor": "VILLA BLUE",
+    "designersNotes": "This is a shortsleeve top with puff sleeves and a relaxed fit. It's made with 100% cotton poplin with a crisp, airy feel that&rsquo;s smooth to the touch.",
+    "activity": [],
+    "seasonRank": 20260,
+    "sleeve": [
+      "Shortsleeve"
+    ],
+    "seoProductDesc": "100% cotton poplin top with puff sleeves",
+    "primaryCategoryId": "villa-blue-clothing",
+    "style": [
+      "Hi-Hip"
+    ],
+    "subDept": [
+      "Blouse"
+    ],
+    "sustainability": [],
+    "c_displayName": "Italic Poplin Blouse",
+    "cmScore2": 0,
+    "hierarchicalCategories": {},
+    "selectableColors": [
+      {
+        "colorIds": {
+          "36342": [
+            "s26_a02_129890_36342_on_a",
+            "s26_a02_129890_36342_on_b",
+            "s26_a02_129890_36342_on_c",
+            "s26_a02_129890_36342_on_d",
+            "s26_a02_129890_36342_on_e",
+            "s26_a02_129890_36342_off_a",
+            "s26_a02_129890_36342_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              88
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a02_129890_36342_sw",
+        "value": "VILLA BLUE"
+      },
+      {
+        "colorIds": {
+          "1274": [
+            "s26_a02_129890_1274_on_a",
+            "s26_a02_129890_1274_on_b",
+            "s26_a02_129890_1274_on_c",
+            "s26_a02_129890_1274_on_d",
+            "s26_a02_129890_1274_on_e",
+            "s26_a02_129890_1274_on_f",
+            "s26_a02_129890_1274_off_a",
+            "s26_a02_129890_1274_off_d",
+            "s26_a02_129890_1274_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              88
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Black",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a02_129890_1274_sw",
+        "value": "BLACK"
+      },
+      {
+        "colorIds": {
+          "14396": [
+            "s26_a02_129890_14396_on_a",
+            "s26_a02_129890_14396_on_b",
+            "s26_a02_129890_14396_on_c",
+            "s26_a02_129890_14396_on_d",
+            "s26_a02_129890_14396_on_e",
+            "s26_a02_129890_14396_on_f",
+            "s26_a02_129890_14396_off_a",
+            "s26_a02_129890_14396_off_d",
+            "s26_a02_129890_14396_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              88
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "White",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a02_129890_14396_sw",
+        "value": "BRIGHT WHITE"
+      }
+    ],
+    "stitching": [],
+    "storeAvailability": [
+      {
+        "id": "2651",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|M|XS"
+        ]
+      },
+      {
+        "id": "2653",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2652",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2616",
+        "a": [
+          "1274:2XS|L|M|XL|XS",
+          "14396:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2612",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2615",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2611",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2617",
+        "a": [
+          "1274:2XS|L|M|S",
+          "14396:2XS|L|XS"
+        ]
+      },
+      {
+        "id": "2603",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2601",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2642",
+        "a": [
+          "1274|14396:2XS|M|S|XS",
+          "36342:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2641",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2671",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2722",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "36342:2XS|M|S|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2751",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2757",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2753",
+        "a": [
+          "1274|14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2758",
+        "a": [
+          "1274:2XS|L|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2756",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2643",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2752",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2721",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:M|S|XS"
+        ]
+      },
+      {
+        "id": "2755",
+        "a": [
+          "1274:2XS|L|M|XS",
+          "14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2754",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2521",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2711",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2542",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2701",
+        "a": [
+          "1274:2XS|XS",
+          "14396:2XS|S"
+        ]
+      },
+      {
+        "id": "2517",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "36342:2XS|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2515",
+        "a": [
+          "1274:2XS|L|M|XS",
+          "14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2518",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2514",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2531",
+        "a": [
+          "1274:2XS|L|XS",
+          "14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2532",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2561",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2802",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2807",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2803",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2805",
+        "a": [
+          "1274|36342:2XS|L|M|S|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2472",
+        "a": [
+          "1274|14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2471",
+        "a": [
+          "1274:2XS|L|S|XS",
+          "14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2831",
+        "a": [
+          "1274:2XS|M|S|XS",
+          "36342|14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2822",
+        "a": [
+          "1274:2XS|L|M|XS",
+          "14396:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2821",
+        "a": [
+          "1274|36342|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2491",
+        "a": [
+          "1274:2XS|M|XS",
+          "14396:2XS|M|S"
+        ]
+      },
+      {
+        "id": "2401",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:L|S|XS"
+        ]
+      },
+      {
+        "id": "2421",
+        "a": [
+          "1274|14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2457",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2453",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2460",
+        "a": [
+          "1274:2XS|L|M|S|XL|XS",
+          "14396:2XS|L|M|XL|XS"
+        ]
+      },
+      {
+        "id": "2454",
+        "a": [
+          "1274:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2451",
+        "a": [
+          "1274|36342:2XS|L|M|S|XS",
+          "14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2459",
+        "a": [
+          "1274:2XS|L|M|XS",
+          "14396:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2417",
+        "a": [
+          "1274|14396:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2414",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:2XS|L|S|XS"
+        ]
+      },
+      {
+        "id": "2411",
+        "a": [
+          "1274:2XS|L",
+          "14396:2XS|S|XS"
+        ]
+      },
+      {
+        "id": "2415",
+        "a": [
+          "1274:2XS|L|M|S|XS",
+          "14396:L|M|XS"
+        ]
+      },
+      {
+        "id": "2416",
+        "a": [
+          "1274:2XS|L|M|XS",
+          "14396:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2551",
+        "a": [
+          "1274:M|S|XS",
+          "14396:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2455",
+        "a": [
+          "1274:L|M|XS",
+          "36342:2XS|L|M|XS",
+          "14396:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2481",
+        "a": [
+          "1274:L|M|S|XS",
+          "14396:L|S"
+        ]
+      },
+      {
+        "id": "2602",
+        "a": [
+          "1274:S"
+        ]
+      }
+    ],
+    "color": "36342",
+    "vgDiscountGroup": "Wilfred",
+    "length": [
+      "Hi-Hip",
+      "44"
+    ],
+    "searchableIfUnavailable": false,
+    "distinctId": "129890",
+    "fabric": [
+      "Cotton"
+    ],
+    "productLabel": "",
+    "rise": [],
+    "buyingCodeId": 0,
+    "_highlightResult": {
+      "primaryCategoryId": {
+        "value": "villa-blue-clothing",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "categories": [
+        {
+          "value": "this-week",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "shirts-blouses",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "shortsleeve-blouses",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "button-up-shirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "going-out-blouses",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "clothing",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "wilfred",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "wilfred-blouses",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "new",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "new-blouses",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "vacation-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "spring-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "brand": {
+        "value": "Wilfred",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "color": {
+        "value": "36342",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "fabric": [
+        {
+          "value": "Cotton",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "length": [
+        {
+          "value": "Hi-Hip",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "44",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "masterId": {
+        "value": "129890",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "productLabel": {
+        "value": "",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "refinementColor": {
+        "value": "Blue",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "subDept": [
+        {
+          "value": "Blouse",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "seoProductDesc": {
+        "value": "100% cotton poplin top with puff sleeves",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "trueColor": {
+        "value": "VILLA BLUE",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "c_displayName": {
+        "value": "Italic Poplin Blouse",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "designersNotes": {
+        "value": "This is a shortsleeve top with puff sleeves and a relaxed fit. It's made with 100% cotton poplin with a crisp, airy feel that&rsquo;s smooth to the touch.",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "articleGeneric": {
+        "value": "129890",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    },
+    "categories": [
+      "this-week",
+      "shirts-blouses",
+      "shortsleeve-blouses",
+      "button-up-shirts",
+      "going-out-blouses",
+      "clothing",
+      "wilfred",
+      "wilfred-blouses",
+      "new",
+      "new-blouses",
+      "vacation-outfits",
+      "spring-outfits"
+    ],
+    "masterId": "129890",
+    "warmth": [],
+    "neckline": [
+      "Collar"
+    ],
+    "cmScore": 520930.67,
+    "bucketMasterATS2": 2,
+    "articleFit": [
+      "Relaxed"
+    ],
+    "buyingCode": "N1",
+    "isDefaultColor": true,
+    "rating": 2,
+    "shippableSizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "legShape": [],
+    "objectID": "129890-36342",
+    "price": {
+      "min": 88,
+      "max": 88,
+      "discount": 0
+    },
+    "refinementColor": "Blue",
+    "sizeRun": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "onSale": false,
+    "reviewCount": 1,
+    "_tags": [
+      "is_not_duplicate",
+      "id:129890-36342"
+    ]
+  },
+  {
+    "bucketMasterATS2": 2,
+    "c_displayName": "InterLock Cotton Eton Longsleeve",
+    "categories": [
+      "daytime-outfits",
+      "womens-basics",
+      "valentines-day-gifts",
+      "full-length",
+      "longsleeve-tshirts",
+      "oversized-tshirts",
+      "valentines-day-outfits",
+      "preppy-outfits",
+      "stripes-prints",
+      "tshirts",
+      "clothing",
+      "t-babaton",
+      "t-babaton-tshirts",
+      "new",
+      "new-tshirts",
+      "country-club-outfits",
+      "prints-florals",
+      "favourites-1"
+    ],
+    "stitching": [],
+    "reviewCount": 5,
+    "trueColor": "WHITE/ VILLA PINK",
+    "shippableSizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "seoProductDesc": "Relaxed double-knit cotton longsleeve polo",
+    "defaultImage": "s26_a01_128555_34530_on_a",
+    "_highlightResult": {
+      "primaryCategoryId": {
+        "value": "valentines-day-outfits",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "categories": [
+        {
+          "value": "daytime-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "womens-basics",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "valentines-day-gifts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "full-length",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "longsleeve-tshirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "oversized-tshirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "valentines-day-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "preppy-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "stripes-prints",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "tshirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "clothing",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "t-babaton",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "t-babaton-tshirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "new",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "new-tshirts",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "country-club-outfits",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "prints-florals",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "favourites-1",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "brand": {
+        "value": "Babaton",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "color": {
+        "value": "34530",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "fabric": [
+        {
+          "value": "InterLock Cotton",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "length": [
+        {
+          "value": "Hip",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        {
+          "value": "45",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "masterId": {
+        "value": "128555",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "productLabel": {
+        "value": "",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "refinementColor": {
+        "value": "Pink",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "subDept": [
+        {
+          "value": "T-shirt",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      ],
+      "seoProductDesc": {
+        "value": "Relaxed double-knit cotton longsleeve polo",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "trueColor": {
+        "value": "WHITE/ VILLA PINK",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "c_displayName": {
+        "value": "InterLock Cotton Eton Longsleeve",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "designersNotes": {
+        "value": "This is a longsleeve polo with a relaxed fit. It's made with InterLock Cotton &mdash; 100% cotton, ideal for everyday wear. Double-knit, interlock construction gives this fabric a refined, soft yet structured feel. This version features an exclusive, custom-designed stripe pattern.",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      "articleGeneric": {
+        "value": "128555",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    },
+    "buyingCodeId": 2,
+    "onSale": false,
+    "rise": [],
+    "primaryCategoryId": "valentines-day-outfits",
+    "productLabel": "",
+    "objectID": "128555-34530",
+    "catAttributes": {},
+    "stretch": [],
+    "legShape": [],
+    "articleGeneric": "128555",
+    "hierarchicalCategories": {
+      "0": "Valentine's Day",
+      "1": "Valentine's Day > Gifting"
+    },
+    "feature": [],
+    "seasonRank": 20260,
+    "unsellable": 1,
+    "brand": "Babaton",
+    "occasion": [],
+    "storeAvailability": [
+      {
+        "id": "2651",
+        "a": [
+          "34530:2XS",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2653",
+        "a": [
+          "34530:2XS|L|S",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2615",
+        "a": [
+          "34530|36700:2XS|L|M|S|XS",
+          "35323|37136:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2611",
+        "a": [
+          "34530:2XS|L|M|XL",
+          "35323|37136:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2671",
+        "a": [
+          "34530:2XS|XL",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2757",
+        "a": [
+          "34530:2XS|L|M|XL|XS",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "27400:2XS|L|XS",
+          "37135:L|XS"
+        ]
+      },
+      {
+        "id": "2752",
+        "a": [
+          "34530:2XS|L|S|XL",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2711",
+        "a": [
+          "34530|35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2551",
+        "a": [
+          "34530|35323|36700:2XS|L|M|S|XL|XS",
+          "27400:M",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2514",
+        "a": [
+          "34530|35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2561",
+        "a": [
+          "34530:2XS|L|M|S|XL|XS",
+          "35323|36700:2XS|L|M|S|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2802",
+        "a": [
+          "34530:2XS|L|S|XL|XS",
+          "35323:2XS|L|M",
+          "31326:XS",
+          "37135:M|S|XS",
+          "36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2807",
+        "a": [
+          "34530|37136:2XS|L|M|XL|XS",
+          "35323:2XS|L|M|S|XS",
+          "27400:L|M|XS",
+          "37135:L|S|XS",
+          "36700:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2805",
+        "a": [
+          "34530|35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2821",
+        "a": [
+          "34530:2XS|L|S|XL|XS",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2451",
+        "a": [
+          "34530:2XS|XL",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:XS",
+          "36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2455",
+        "a": [
+          "34530:2XS|L|S|XL|XS",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2612",
+        "a": [
+          "34530:L|M|S|XL|XS",
+          "35323|37136:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:M|S"
+        ]
+      },
+      {
+        "id": "2722",
+        "a": [
+          "34530:L|S|XL|XS",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:M|S|XS"
+        ]
+      },
+      {
+        "id": "2643",
+        "a": [
+          "34530:L|M|S|XL|XS",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2521",
+        "a": [
+          "34530:XS",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:M|S|XS",
+          "36700:2XS|L|S|XL|XS",
+          "1275:M"
+        ]
+      },
+      {
+        "id": "2517",
+        "a": [
+          "34530|37135:L|M|S|XS",
+          "35323:2XS|L|M|S|XL|XS",
+          "37136:2XS|L|M|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2806",
+        "a": [
+          "34530:S",
+          "35323:2XS|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XL|XS",
+          "30751:2XS"
+        ]
+      },
+      {
+        "id": "2753",
+        "a": [
+          "34530:M",
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M"
+        ]
+      },
+      {
+        "id": "2616",
+        "a": [
+          "34530:L|XL",
+          "35323|36700:2XS|L|M|S|XL",
+          "31326:M",
+          "37136:L",
+          "37135:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2491",
+        "a": [
+          "34530:L",
+          "35323:2XS|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2421",
+        "a": [
+          "34530:L",
+          "35323:2XS|L|S|XL",
+          "27400:M",
+          "37135:2XS|L|S|XS",
+          "36700:2XS|L"
+        ]
+      },
+      {
+        "id": "2456",
+        "a": [
+          "34530:L",
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2411",
+        "a": [
+          "34530:L",
+          "35323:L|M|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|XS"
+        ]
+      },
+      {
+        "id": "2652",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2614",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2617",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2603",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2602",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2164",
+        "a": [
+          "35323:2XS|L|M|S|XS",
+          "37135:M|S|XL|XS",
+          "36700:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2601",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:M|S|XS"
+        ]
+      },
+      {
+        "id": "2642",
+        "a": [
+          "35323:2XS|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2641",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2161",
+        "a": [
+          "35323:2XS|L|M|S|XS",
+          "27400:XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2758",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|XS"
+        ]
+      },
+      {
+        "id": "2756",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|XS",
+          "1275:XS"
+        ]
+      },
+      {
+        "id": "2721",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|XS"
+        ]
+      },
+      {
+        "id": "2755",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2541",
+        "a": [
+          "35323|36700:2XS|M|S|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2542",
+        "a": [
+          "35323:2XS|L|S|XL|XS",
+          "37135:2XS|L|M|S|XL|XS",
+          "36700:2XS|L|M|S|XS",
+          "1275:S"
+        ]
+      },
+      {
+        "id": "2701",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2515",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2518",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|M|S|XS"
+        ]
+      },
+      {
+        "id": "2516",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2519",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2531",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2532",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2804",
+        "a": [
+          "35323:2XS|L|M|XL|XS",
+          "37135:M|S|XS",
+          "36700:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2803",
+        "a": [
+          "35323:2XS|L|S|XL|XS",
+          "37135:2XS|L|S|XS",
+          "36700:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2472",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37136:2XS",
+          "37135:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2471",
+        "a": [
+          "35323:2XS|L|M|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2831",
+        "a": [
+          "35323:2XS|M|S|XL|XS",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2822",
+        "a": [
+          "35323:2XS|L|M|XL|XS",
+          "37135|36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2492",
+        "a": [
+          "35323|37135:2XS|L|M|S|XL|XS",
+          "36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2401",
+        "a": [
+          "35323:2XS|L",
+          "37135:2XS|S|XS",
+          "36700:2XS|L|M"
+        ]
+      },
+      {
+        "id": "2402",
+        "a": [
+          "35323|37135|36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2458",
+        "a": [
+          "35323:2XS|L|S|XL|XS",
+          "37135:L|M|S|XL|XS",
+          "36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2457",
+        "a": [
+          "35323|36700:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2452",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:2XS|L",
+          "36700:M"
+        ]
+      },
+      {
+        "id": "2460",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:L|M|S|XL|XS",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2459",
+        "a": [
+          "35323|36700:2XS|L|M|S|XS",
+          "37135:2XS|L|M|S"
+        ]
+      },
+      {
+        "id": "2417",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2414",
+        "a": [
+          "35323:2XS|L|M|S|XS",
+          "37135:M|S",
+          "36700:2XS|L|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2415",
+        "a": [
+          "35323:2XS|M|S|XS",
+          "37135:M",
+          "36700:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2416",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135|36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2481",
+        "a": [
+          "35323:2XS|L|M|S|XL|XS",
+          "37135:M",
+          "36700:2XS|L|M|S|XS"
+        ]
+      },
+      {
+        "id": "2751",
+        "a": [
+          "35323:L|S|XL|XS",
+          "37135:L|M|XS",
+          "36700:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2453",
+        "a": [
+          "35323:L|M|S|XL|XS",
+          "37135:L|M",
+          "36700:2XS|L|M|XS"
+        ]
+      },
+      {
+        "id": "2754",
+        "a": [
+          "35323:L|M|XL",
+          "31326:L",
+          "37135:L|M|S|XS",
+          "36700:2XS|L|M|S|XL|XS"
+        ]
+      },
+      {
+        "id": "2162",
+        "a": [
+          "37135:2XS|L|M|S|XS",
+          "36700:2XS|M|S|XL|XS"
+        ]
+      }
+    ],
+    "trend": [],
+    "warmth": [],
+    "wash": [],
+    "_tags": [
+      "is_not_duplicate",
+      "id:128555-34530"
+    ],
+    "masterId": "128555",
+    "price": {
+      "min": 58,
+      "max": 58,
+      "discount": 0
+    },
+    "sustainability": [],
+    "inseam": [],
+    "activity": [],
+    "distinctId": "128555",
+    "name": "InterLock Cotton Eton Longsleeve",
+    "rating": 5,
+    "sizeRun": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "style": [
+      "Hip"
+    ],
+    "neckline": [
+      "Collar"
+    ],
+    "cmScore2": 0,
+    "buyingCode": "CON",
+    "fabric": [
+      "InterLock Cotton"
+    ],
+    "readyToShip": true,
+    "selectableColors": [
+      {
+        "colorIds": {
+          "34530": [
+            "s26_a01_128555_34530_on_a",
+            "s26_a01_128555_34530_on_b",
+            "s26_a01_128555_34530_on_c",
+            "s26_a01_128555_34530_on_d",
+            "s26_a01_128555_34530_on_e",
+            "s26_a01_128555_34530_on_f",
+            "s26_a01_128555_34530_on_g",
+            "s26_a01_128555_34530_off_a",
+            "s26_a01_128555_34530_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Pink",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128555_34530_sw",
+        "value": "WHITE/ VILLA PINK"
+      },
+      {
+        "colorIds": {
+          "35323": [
+            "s26_a01_128555_35323_on_a",
+            "s26_a01_128555_35323_on_b",
+            "s26_a01_128555_35323_on_c",
+            "s26_a01_128555_35323_on_d",
+            "s26_a01_128555_35323_on_e",
+            "s26_a01_128555_35323_off_a",
+            "s26_a01_128555_35323_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128555_35323_sw",
+        "value": "DK NT NVY /CORDOVAN"
+      },
+      {
+        "colorIds": {
+          "27400": [
+            "s26_a01_128553_27400_on_a",
+            "s26_a01_128553_27400_on_b",
+            "s26_a01_128553_27400_on_c",
+            "s26_a01_128553_27400_on_d",
+            "s26_a01_128553_27400_on_e",
+            "s26_a01_128553_27400_on_f",
+            "s26_a01_128553_27400_off_a",
+            "s26_a01_128553_27400_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "White",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128553_27400_sw",
+        "value": "LIGHT BIRCH/BLACK"
+      },
+      {
+        "colorIds": {
+          "36700": [
+            "s26_a01_128555_36700_on_a",
+            "s26_a01_128555_36700_on_b",
+            "s26_a01_128555_36700_on_c",
+            "s26_a01_128555_36700_on_d",
+            "s26_a01_128555_36700_on_e",
+            "s26_a01_128555_36700_off_a",
+            "s26_a01_128555_36700_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Brown",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128555_36700_sw",
+        "value": "RCHMCHBRWN /LEMONADE"
+      },
+      {
+        "colorIds": {
+          "31326": [
+            "f25_a01_132380_31326_off_a",
+            "f25_a01_132380_31326_off_h",
+            "s26_a01_128555_34530_on_a",
+            "s26_a01_128555_34530_on_b",
+            "s26_a01_128555_34530_on_c",
+            "s26_a01_128555_34530_on_d",
+            "s26_a01_128555_34530_on_e",
+            "s26_a01_128555_34530_on_f",
+            "s26_a01_128555_34530_on_g"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "f25_a01_132380_31326_sw",
+        "value": "LT BIRCH/ DK NGHT NV"
+      },
+      {
+        "colorIds": {
+          "37135": [
+            "s26_a01_128555_37135_on_a",
+            "s26_a01_128555_37135_on_b",
+            "s26_a01_128555_37135_on_c",
+            "s26_a01_128555_37135_on_d",
+            "s26_a01_128555_37135_on_e",
+            "s26_a01_128555_37135_on_f",
+            "s26_a01_128555_37135_off_a",
+            "s26_a01_128555_37135_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128555_37135_sw",
+        "value": "MDDY BL/DRK NGHT NVY"
+      },
+      {
+        "colorIds": {
+          "37136": [
+            "s26_a01_128555_37136_on_a",
+            "s26_a01_128555_37136_on_b",
+            "s26_a01_128555_37136_on_c",
+            "s26_a01_128555_37136_on_d",
+            "s26_a01_128555_37136_on_e",
+            "s26_a01_128555_37136_on_f",
+            "s26_a01_128555_37136_off_a",
+            "s26_a01_128555_37136_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_128555_37136_sw",
+        "value": "DRK NGT NVY/VLL PNK"
+      },
+      {
+        "colorIds": {
+          "1275": [
+            "s26_a01_132581_1275_on_a",
+            "s26_a01_132581_1275_on_b",
+            "s26_a01_132581_1275_on_c",
+            "s26_a01_132581_1275_on_d",
+            "s26_a01_132581_1275_on_e",
+            "s26_a01_132581_1275_off_a",
+            "s26_a01_132581_1275_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "White",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "swatch": "s26_a01_132581_1275_sw",
+        "value": "WHITE"
+      },
+      {
+        "colorIds": {
+          "30751": [
+            "s26_a01_132581_30751_on_a",
+            "s26_a01_132581_30751_on_b",
+            "s26_a01_132581_30751_on_c",
+            "s26_a01_132581_30751_on_d",
+            "s26_a01_132581_30751_on_e",
+            "s26_a01_132581_30751_off_a",
+            "s26_a01_132581_30751_off_h"
+          ]
+        },
+        "onSale": false,
+        "prices": [
+          {
+            "prices": [
+              58
+            ],
+            "source": "usd-list-prices"
+          }
+        ],
+        "refColor": "Blue",
+        "shippableSizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M"
+        ],
+        "sizeRun": [
+          "2XS",
+          "XS",
+          "S",
+          "M"
+        ],
+        "swatch": "s26_a01_132581_30751_sw",
+        "value": "DARK NIGHT NAVY"
+      }
+    ],
+    "color": "34530",
+    "cmScore": 149250164.7,
+    "designersNotes": "This is a longsleeve polo with a relaxed fit. It's made with InterLock Cotton &mdash; 100% cotton, ideal for everyday wear. Double-knit, interlock construction gives this fabric a refined, soft yet structured feel. This version features an exclusive, custom-designed stripe pattern.",
+    "length": [
+      "Hip",
+      "45"
+    ],
+    "refinementColor": "Pink",
+    "vgDiscountGroup": "Babaton",
+    "sleeve": [
+      "Longsleeve"
+    ],
+    "slug": "interlock-cotton-eton-longsleeve/128555.html",
+    "subDept": [
+      "T-shirt"
+    ],
+    "bucketRevenue30Days": 5,
+    "articleFit": [
+      "Relaxed"
+    ],
+    "isDefaultColor": true,
+    "orderable": true,
+    "searchableIfUnavailable": false
+  }
+]

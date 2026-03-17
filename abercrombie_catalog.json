@@ -1,0 +1,40 @@
+[
+  {
+    "url": "https://www.abercrombie.com/api/bff/catalog?catalogId=10901&storeId=10051&langId=-1&brand=anf&store=a-us&currency=USD&country=US&urlRoot=/shop/us&storePreview=false&aemContentAuthoring=0",
+    "body": [
+      {
+        "data": {
+          "currentCountry": {
+            "countryCode": "US",
+            "name": "United States",
+            "__typename": "Country"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.abercrombie.com/api/bff/catalog?catalogId=10901&storeId=10051&langId=-1&brand=anf&store=a-us&country=US&urlRoot=/shop/us&storePreview=false&aemContentAuthoring=0",
+    "body": [
+      {
+        "data": {
+          "currentCountry": {
+            "countryCode": "US",
+            "name": "United States",
+            "__typename": "Country"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.abercrombie.com/api/bff/catalog?catalogId=10901&storeId=10051&langId=-1&brand=anf&store=a-us&currency=USD&country=US&urlRoot=/shop/us&segment=EZ&storePreview=false&aemContentAuthoring=0",
+    "body": [
+      {
+        "data": {
+          "content": null
+        }
+      }
+    ]
+  }
+]

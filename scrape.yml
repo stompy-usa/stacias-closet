@@ -1,0 +1,46 @@
+name: Scrape & Deploy
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  # Also allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+
+      - name: Run scraper (Wayward + Aritzia)
+        run: python run.py --once --skip-abercrombie
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Commit & push products.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/products.json
+          git diff --staged --quiet || git commit -m "chore: refresh products $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

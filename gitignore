@@ -1,0 +1,37 @@
+# Database — too large and changes constantly, not needed in repo
+data/
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Test/debug scripts — don't need these in the repo
+aritzia_sniff.py
+aritzia_algolia_capture.py
+aritzia_algolia_probe.py
+abercrombie_sniff.py
+abercrombie_capture.py
+abercrombie_catalog_capture.py
+abercrombie_ssr.py
+abercrombie_apollo.py
+abercrombie_diagnose.py
+abercrombie_compare.py
+abercrombie_timing_test.py
+abercrombie_stealth_test.py
+abercrombie_cookie_test.py
+abercrombie_check_slugs.py
+algolia_sample.json
+algolia_capture.json
+abercrombie_catalog.json
+abercrombie_next_data.json
+abercrombie_rendered.html
+aritzia_test.html
+
+# OS
+.DS_Store
+Thumbs.db
