@@ -534,16 +534,43 @@
       grid.innerHTML = '';
       products.forEach((p, i) => grid.appendChild(buildCard(p, i)));
 
-      const observer = new IntersectionObserver(entries => {
+      // Observer 1: reveal animation
+      const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
           if (e.isIntersecting) {
             e.target.classList.add('visible');
-            observer.unobserve(e.target);
+            revealObserver.unobserve(e.target);
           }
         });
       }, { threshold: 0.05 });
 
-      grid.querySelectorAll('.card').forEach(c => observer.observe(c));
+      // Observer 2: load/unload images as they enter/leave viewport
+      // rootMargin loads images slightly before they appear and unloads them well after they leave
+      const imgObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          const img = e.target.querySelector('.card-img');
+          if (!img) return;
+          if (e.isIntersecting) {
+            // Load image — restore src from data-src
+            if (img.dataset.src && !img.src.includes(img.dataset.src.slice(-20))) {
+              img.src = img.dataset.src;
+            }
+          } else {
+            // Unload image — swap src for tiny placeholder to free memory
+            if (img.dataset.src) {
+              img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+            }
+          }
+        });
+      }, {
+        rootMargin: '400px 0px 400px 0px',  // preload 400px before entering viewport
+        threshold: 0
+      });
+
+      grid.querySelectorAll('.card').forEach(c => {
+        revealObserver.observe(c);
+        imgObserver.observe(c);
+      });
     }
 
     function buildCard(p, i) {
@@ -561,13 +588,16 @@
         : p.image_url;
       // Use cherry favicon as fallback for base64 placeholders
       const isPlaceholder = !imgSrc || imgSrc.startsWith('data:') || imgSrc.includes('placeholder');
-      const hasImg = !isPlaceholder;
       const finalSrc = isPlaceholder ? './favicon.png' : imgSrc;
+      const placeholderGif = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+
       a.innerHTML = `
         <div class="card-img-wrap" style="${isPlaceholder ? 'min-height:200px;' : ''}">
-          ${hasImg
-            ? `<img class="card-img" src="${esc(finalSrc)}" alt="${esc(p.name)}" loading="lazy" style="${isPlaceholder ? 'object-fit:contain;padding:40px;opacity:0.4;' : ''}" />`
-            : `<div style="min-height:200px;background:var(--parchment);"></div>`}
+          <img class="card-img"
+               src="${placeholderGif}"
+               data-src="${esc(finalSrc)}"
+               alt="${esc(p.name)}"
+               style="${isPlaceholder ? 'object-fit:contain;padding:40px;opacity:0.4;' : ''}" />
           <div class="card-overlay"><span class="card-overlay-text">View Piece →</span></div>
         </div>
         <div class="card-body">
