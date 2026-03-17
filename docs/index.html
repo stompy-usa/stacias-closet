@@ -554,11 +554,16 @@
       a.rel       = 'noopener noreferrer';
       a.style.transitionDelay = `${Math.min(i * 30, 400)}ms`;
 
-      const hasImg = p.image_url && !p.image_url.includes('placeholder');
+      // Abercrombie blocks hotlinking — route their images through the proxy
+      const PROXY = 'https://stacias-closet.rcookson80.workers.dev/?url=';
+      const imgSrc = p.image_url && p.image_url.includes('img.abercrombie.com')
+        ? PROXY + encodeURIComponent(p.image_url)
+        : p.image_url;
+      const hasImg = imgSrc && !imgSrc.includes('placeholder');
       a.innerHTML = `
         <div class="card-img-wrap">
           ${hasImg
-            ? `<img class="card-img" src="${esc(p.image_url)}" alt="${esc(p.name)}" loading="lazy" onerror="this.parentElement.style.minHeight='160px'" />`
+            ? `<img class="card-img" src="${esc(imgSrc)}" alt="${esc(p.name)}" loading="lazy" onerror="this.parentElement.style.minHeight='160px'" />`
             : `<div style="min-height:200px;background:var(--parchment);"></div>`}
           <div class="card-overlay"><span class="card-overlay-text">View Piece →</span></div>
         </div>
