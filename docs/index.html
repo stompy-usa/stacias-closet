@@ -559,11 +559,14 @@
       const imgSrc = p.image_url && p.image_url.includes('img.abercrombie.com')
         ? PROXY + encodeURIComponent(p.image_url)
         : p.image_url;
-      const hasImg = imgSrc && !imgSrc.includes('placeholder');
+      // Use cherry favicon as fallback for base64 placeholders
+      const isPlaceholder = !imgSrc || imgSrc.startsWith('data:') || imgSrc.includes('placeholder');
+      const hasImg = !isPlaceholder;
+      const finalSrc = isPlaceholder ? './favicon.png' : imgSrc;
       a.innerHTML = `
-        <div class="card-img-wrap">
+        <div class="card-img-wrap" style="${isPlaceholder ? 'min-height:200px;' : ''}">
           ${hasImg
-            ? `<img class="card-img" src="${esc(imgSrc)}" alt="${esc(p.name)}" loading="lazy" onerror="this.parentElement.style.minHeight='160px'" />`
+            ? `<img class="card-img" src="${esc(finalSrc)}" alt="${esc(p.name)}" loading="lazy" style="${isPlaceholder ? 'object-fit:contain;padding:40px;opacity:0.4;' : ''}" />`
             : `<div style="min-height:200px;background:var(--parchment);"></div>`}
           <div class="card-overlay"><span class="card-overlay-text">View Piece →</span></div>
         </div>
