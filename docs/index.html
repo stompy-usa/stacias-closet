@@ -469,11 +469,9 @@
 
   <div class="toolbar" id="toolbar">
     <span class="toolbar-label">Filter</span>
-    <button class="filter-btn active" data-filter-type="site" data-filter-value="">All Sources</button>
+    <button class="filter-btn active" id="all-sources-btn" data-filter-type="site" data-filter-value="">All Sources</button>
     <div class="toolbar-sep"></div>
     <div id="site-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
-    <div class="toolbar-sep"></div>
-    <div id="category-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
     <div class="toolbar-sep"></div>
     <button class="filter-btn fav-btn" id="fav-filter-btn">
       <img src="./favicon.png" alt="cherry" />
@@ -571,6 +569,19 @@
           </div>`;
       }
 
+      // All Sources button — resets site filter
+      document.getElementById('all-sources-btn').addEventListener('click', () => {
+        activeSite     = '';
+        activeCategory = '';
+        showFavorites  = false;
+        document.getElementById('fav-filter-btn').classList.remove('active');
+        document.getElementById('grid').classList.remove('favorites-active');
+        document.querySelectorAll('.filter-btn[data-filter-type="site"]')
+          .forEach(b => b.classList.remove('active'));
+        document.getElementById('all-sources-btn').classList.add('active');
+        renderGrid();
+      });
+
       // Favorites filter button
       document.getElementById('fav-filter-btn').addEventListener('click', () => {
         showFavorites = !showFavorites;
@@ -604,14 +615,12 @@
 
     // ── Filters ───────────────────────────────────────────────────────
     function buildFilters() {
-      const sites      = [...new Set(allProducts.map(p => p.site))].sort();
-      const categories = [...new Set(allProducts.map(p => p.category))].filter(Boolean).sort();
+      const sites = [...new Set(allProducts.map(p => p.site))].sort();
 
       const siteWrap = document.getElementById('site-filters');
       sites.forEach(s => siteWrap.appendChild(makeBtn(SITE_LABELS[s] || s, 'site', s)));
 
-      const catWrap = document.getElementById('category-filters');
-      categories.slice(0, 10).forEach(c => catWrap.appendChild(makeBtn(c, 'category', c)));
+
     }
 
     function makeBtn(label, type, value) {
@@ -625,15 +634,19 @@
         document.getElementById('fav-filter-btn').classList.remove('active');
         document.getElementById('grid').classList.remove('favorites-active');
 
-        if (type === 'site')     activeSite     = activeSite     === value ? '' : value;
-        if (type === 'category') activeCategory = activeCategory === value ? '' : value;
+        // Toggle: clicking active site filter deselects it (returns to All Sources)
+        if (type === 'site') activeSite = activeSite === value ? '' : value;
 
-        document.querySelectorAll(`.filter-btn[data-filter-type="${type}"]`)
-          .forEach(b => b.classList.toggle('active',
-            b === btn && (type === 'site' ? activeSite : activeCategory) !== ''));
+        // Update active state on all site buttons
+        document.querySelectorAll('.filter-btn[data-filter-type="site"]')
+          .forEach(b => b.classList.remove('active'));
 
-        if (type === 'site' && !activeSite)
-          document.querySelector('.filter-btn[data-filter-value=""]')?.classList.add('active');
+        if (activeSite) {
+          btn.classList.add('active');
+          document.getElementById('all-sources-btn').classList.remove('active');
+        } else {
+          document.getElementById('all-sources-btn').classList.add('active');
+        }
 
         renderGrid();
       });
