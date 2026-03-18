@@ -75,12 +75,7 @@
       gap: 10px;
     }
 
-    .site-title img {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-    }
-
+    .site-title img { width: 28px; height: 28px; object-fit: contain; }
     .site-title span { color: var(--accent); }
 
     .header-meta {
@@ -194,6 +189,12 @@
     .filter-btn:hover { border-color: var(--ink); color: var(--ink); }
     .filter-btn.active { background: var(--ink); border-color: var(--ink); color: var(--cream); }
 
+    /* Favorites filter button — accent coloured when active */
+    .filter-btn.fav-btn { border-color: var(--accent); color: var(--accent); display: flex; align-items: center; gap: 6px; }
+    .filter-btn.fav-btn img { width: 14px; height: 14px; object-fit: contain; }
+    .filter-btn.fav-btn.active { background: var(--accent); border-color: var(--accent); color: var(--cream); }
+    .filter-btn.fav-btn.active img { filter: brightness(10); }
+
     .toolbar-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
 
     .search-wrap { margin-left: auto; position: relative; }
@@ -249,11 +250,10 @@
       overflow: hidden;
       background: var(--parchment);
       position: relative;
-      aspect-ratio: 3 / 4;  /* portrait ratio — reserves space before image loads */
+      aspect-ratio: 3 / 4;
     }
-    .card-img-wrap.placeholder-wrap {
-      aspect-ratio: 1 / 1;  /* square for cherry placeholder */
-    }
+
+    .card-img-wrap.placeholder-wrap { aspect-ratio: 1 / 1; }
 
     .card-img {
       width: 100%;
@@ -265,6 +265,7 @@
       object-fit: cover;
     }
 
+    /* ── Overlay ── */
     .card-overlay {
       position: absolute;
       inset: 0;
@@ -274,6 +275,7 @@
       justify-content: center;
       opacity: 0;
       transition: opacity 0.3s var(--ease-out);
+      pointer-events: none;
     }
 
     .card-overlay-text {
@@ -285,6 +287,83 @@
       padding: 8px 18px;
     }
 
+    /* ── Favorite button (top-left of overlay) ── */
+    .fav-btn-card {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 32px;
+      height: 32px;
+      background: rgba(26,22,18,0.55);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s var(--ease-out), transform 0.2s var(--ease-out), background 0.2s;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .fav-btn-card img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      opacity: 0.6;
+      transition: opacity 0.2s, transform 0.2s var(--ease-out);
+    }
+
+    .card:hover .fav-btn-card {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .fav-btn-card:hover {
+      background: rgba(139,58,42,0.8);
+      transform: scale(1.1);
+    }
+
+    .fav-btn-card:hover img { opacity: 1; }
+
+    /* Favorited state — always visible, full cherry */
+    .fav-btn-card.favorited {
+      opacity: 1;
+      pointer-events: auto;
+      background: var(--accent);
+    }
+
+    .fav-btn-card.favorited img { opacity: 1; }
+
+    /* ── Remove button (top-right, favorites view only) ── */
+    .remove-btn-card {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 28px;
+      height: 28px;
+      background: rgba(26,22,18,0.55);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream);
+      font-size: 14px;
+      line-height: 1;
+      opacity: 0;
+      transition: opacity 0.3s var(--ease-out), background 0.2s;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .favorites-active .remove-btn-card { display: flex; }
+    .card:hover .remove-btn-card { opacity: 1; pointer-events: auto; }
+    .remove-btn-card:hover { background: rgba(139,58,42,0.9); }
+
+    /* ── Card body ── */
     .card-body { padding: 14px 14px 16px; border-top: 1px solid var(--border); }
 
     .card-site {
@@ -388,13 +467,18 @@
     </div>
   </section>
 
-  <div class="toolbar">
+  <div class="toolbar" id="toolbar">
     <span class="toolbar-label">Filter</span>
     <button class="filter-btn active" data-filter-type="site" data-filter-value="">All Sources</button>
     <div class="toolbar-sep"></div>
     <div id="site-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
     <div class="toolbar-sep"></div>
     <div id="category-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
+    <div class="toolbar-sep"></div>
+    <button class="filter-btn fav-btn" id="fav-filter-btn">
+      <img src="./favicon.png" alt="cherry" />
+      Favorites
+    </button>
     <div class="search-wrap">
       <input class="search-input" type="text" id="search" placeholder="Search pieces…" />
       <span class="search-icon">⌕</span>
@@ -417,16 +501,58 @@
   </footer>
 
   <script>
+    const PROXY = 'https://stacias-closet.rcookson80.workers.dev/?url=';
     const SITE_LABELS = {
       wayward:     'Wayward Collection',
       aritzia:     'Aritzia',
       abercrombie: 'Abercrombie & Fitch',
     };
+    const PLACEHOLDER_GIF = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+    const FAV_KEY = 'stacias_closet_favorites';
 
     let allProducts    = [];
     let activeSite     = '';
     let activeCategory = '';
     let searchQuery    = '';
+    let showFavorites  = false;
+
+    // ── Favorites persistence ─────────────────────────────────────────
+    function loadFavorites() {
+      try { return JSON.parse(localStorage.getItem(FAV_KEY) || '{}'); }
+      catch { return {}; }
+    }
+
+    function saveFavorites(favs) {
+      localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+    }
+
+    function isFavorited(product_url) {
+      return !!loadFavorites()[product_url];
+    }
+
+    function toggleFavorite(product) {
+      const favs = loadFavorites();
+      if (favs[product.product_url]) {
+        delete favs[product.product_url];
+      } else {
+        // Store full product snapshot so delisted items still show
+        favs[product.product_url] = { ...product, favorited_at: new Date().toISOString() };
+      }
+      saveFavorites(favs);
+      return !!favs[product.product_url];
+    }
+
+    function removeFavorite(product_url) {
+      const favs = loadFavorites();
+      delete favs[product_url];
+      saveFavorites(favs);
+    }
+
+    function getFavoriteProducts() {
+      return Object.values(loadFavorites()).sort((a, b) =>
+        new Date(b.favorited_at) - new Date(a.favorited_at)
+      );
+    }
 
     // ── Boot ──────────────────────────────────────────────────────────
     async function init() {
@@ -434,7 +560,6 @@
         const resp = await fetch('./products.json');
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         allProducts = await resp.json();
-
         buildFilters();
         updateStats();
         renderGrid();
@@ -445,27 +570,35 @@
             <p>Run the scraper to generate products.json</p>
           </div>`;
       }
+
+      // Favorites filter button
+      document.getElementById('fav-filter-btn').addEventListener('click', () => {
+        showFavorites = !showFavorites;
+        document.getElementById('fav-filter-btn').classList.toggle('active', showFavorites);
+        document.getElementById('grid').classList.toggle('favorites-active', showFavorites);
+        // Clear other filters when entering favorites
+        if (showFavorites) {
+          activeSite     = '';
+          activeCategory = '';
+          searchQuery    = '';
+          document.getElementById('search').value = '';
+          document.querySelectorAll('.filter-btn[data-filter-type]')
+            .forEach(b => b.classList.remove('active'));
+          document.querySelector('.filter-btn[data-filter-value=""]')?.classList.add('active');
+        }
+        renderGrid();
+      });
     }
 
     // ── Stats ─────────────────────────────────────────────────────────
     function updateStats() {
       document.getElementById('stat-count').textContent =
         allProducts.length.toLocaleString();
-
-      // Find most recent scraped_at
-      const latest = allProducts
-        .map(p => p.scraped_at)
-        .filter(Boolean)
-        .sort()
-        .pop();
-
+      const latest = allProducts.map(p => p.scraped_at).filter(Boolean).sort().pop();
       if (latest) {
         const d = new Date(latest);
         document.getElementById('stat-updated').textContent =
-          'Updated ' + d.toLocaleString('en-US', {
-            month: 'short', day: 'numeric',
-            hour: 'numeric', minute: '2-digit'
-          });
+          'Updated ' + d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
       }
     }
 
@@ -488,6 +621,10 @@
       btn.dataset.filterType  = type;
       btn.dataset.filterValue = value;
       btn.addEventListener('click', () => {
+        showFavorites = false;
+        document.getElementById('fav-filter-btn').classList.remove('active');
+        document.getElementById('grid').classList.remove('favorites-active');
+
         if (type === 'site')     activeSite     = activeSite     === value ? '' : value;
         if (type === 'category') activeCategory = activeCategory === value ? '' : value;
 
@@ -508,6 +645,9 @@
     document.getElementById('search').addEventListener('input', e => {
       clearTimeout(searchTimer);
       searchTimer = setTimeout(() => {
+        showFavorites = false;
+        document.getElementById('fav-filter-btn').classList.remove('active');
+        document.getElementById('grid').classList.remove('favorites-active');
         searchQuery = e.target.value.toLowerCase().trim();
         renderGrid();
       }, 200);
@@ -515,6 +655,7 @@
 
     // ── Render ────────────────────────────────────────────────────────
     function filtered() {
+      if (showFavorites) return getFavoriteProducts();
       return allProducts.filter(p => {
         if (activeSite     && p.site     !== activeSite)     return false;
         if (activeCategory && p.category !== activeCategory) return false;
@@ -534,18 +675,16 @@
         `${products.length.toLocaleString()} pieces showing`;
 
       if (!products.length) {
-        grid.innerHTML = `
-          <div class="state-msg">
-            <div class="big">No results</div>
-            <p>Try adjusting your filters.</p>
-          </div>`;
+        grid.innerHTML = showFavorites
+          ? `<div class="state-msg"><div class="big">No favorites yet</div><p>Hover a piece and tap the cherry to save it.</p></div>`
+          : `<div class="state-msg"><div class="big">No results</div><p>Try adjusting your filters.</p></div>`;
         return;
       }
 
       grid.innerHTML = '';
       products.forEach((p, i) => grid.appendChild(buildCard(p, i)));
 
-      // Observer 1: reveal animation
+      // Reveal animation observer
       const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
           if (e.isIntersecting) {
@@ -555,28 +694,19 @@
         });
       }, { threshold: 0.05 });
 
-      // Observer 2: load/unload images as they enter/leave viewport
-      // rootMargin loads images slightly before they appear and unloads them well after they leave
+      // Image load/unload observer for memory efficiency
       const imgObserver = new IntersectionObserver(entries => {
         entries.forEach(e => {
           const img = e.target.querySelector('.card-img');
           if (!img) return;
           if (e.isIntersecting) {
-            // Load image — restore src from data-src
-            if (img.dataset.src && !img.src.includes(img.dataset.src.slice(-20))) {
+            if (img.dataset.src && !img.src.includes(img.dataset.src.slice(-20)))
               img.src = img.dataset.src;
-            }
           } else {
-            // Unload image — swap src for tiny placeholder to free memory
-            if (img.dataset.src) {
-              img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
-            }
+            if (img.dataset.src) img.src = PLACEHOLDER_GIF;
           }
         });
-      }, {
-        rootMargin: '400px 0px 400px 0px',  // preload 400px before entering viewport
-        threshold: 0
-      });
+      }, { rootMargin: '400px 0px 400px 0px', threshold: 0 });
 
       grid.querySelectorAll('.card').forEach(c => {
         revealObserver.observe(c);
@@ -584,6 +714,7 @@
       });
     }
 
+    // ── Card builder ──────────────────────────────────────────────────
     function buildCard(p, i) {
       const a = document.createElement('a');
       a.className = 'card';
@@ -592,24 +723,27 @@
       a.rel       = 'noopener noreferrer';
       a.style.transitionDelay = `${Math.min(i * 30, 400)}ms`;
 
-      // Abercrombie blocks hotlinking — route their images through the proxy
-      const PROXY = 'https://stacias-closet.rcookson80.workers.dev/?url=';
       const imgSrc = p.image_url && p.image_url.includes('img.abercrombie.com')
         ? PROXY + encodeURIComponent(p.image_url)
         : p.image_url;
-      // Use cherry favicon as fallback for base64 placeholders
       const isPlaceholder = !imgSrc || imgSrc.startsWith('data:') || imgSrc.includes('placeholder');
       const finalSrc = isPlaceholder ? './favicon.png' : imgSrc;
-      const placeholderGif = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+      const favorited = isFavorited(p.product_url);
 
       a.innerHTML = `
         <div class="card-img-wrap ${isPlaceholder ? 'placeholder-wrap' : ''}">
           <img class="card-img"
-               src="${placeholderGif}"
+               src="${PLACEHOLDER_GIF}"
                data-src="${esc(finalSrc)}"
                alt="${esc(p.name)}"
                style="${isPlaceholder ? 'object-fit:contain;padding:40px;opacity:0.4;' : ''}" />
-          <div class="card-overlay"><span class="card-overlay-text">View Piece →</span></div>
+          <div class="card-overlay">
+            <span class="card-overlay-text">View Piece →</span>
+          </div>
+          <button class="fav-btn-card ${favorited ? 'favorited' : ''}" title="${favorited ? 'Unfavorite' : 'Favorite'}">
+            <img src="./favicon.png" alt="favorite" />
+          </button>
+          <button class="remove-btn-card" title="Remove from favorites">✕</button>
         </div>
         <div class="card-body">
           <p class="card-site">${esc(SITE_LABELS[p.site] || p.site)}</p>
@@ -619,6 +753,34 @@
             <span class="card-category">${esc(p.category || '')}</span>
           </div>
         </div>`;
+
+      // Favorite button — stop link propagation, toggle favorite
+      const favBtn = a.querySelector('.fav-btn-card');
+      favBtn.addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        const nowFav = toggleFavorite(p);
+        favBtn.classList.toggle('favorited', nowFav);
+        favBtn.title = nowFav ? 'Unfavorite' : 'Favorite';
+        // If we're in favorites view and just unfavorited, remove the card
+        if (showFavorites && !nowFav) {
+          a.style.transition = 'opacity 0.3s';
+          a.style.opacity = '0';
+          setTimeout(() => { a.remove(); renderGrid(); }, 300);
+        }
+      });
+
+      // Remove button (favorites view only) — top-right X
+      const removeBtn = a.querySelector('.remove-btn-card');
+      removeBtn.addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        removeFavorite(p.product_url);
+        a.style.transition = 'opacity 0.3s';
+        a.style.opacity = '0';
+        setTimeout(() => { a.remove(); renderGrid(); }, 300);
+      });
+
       return a;
     }
 
