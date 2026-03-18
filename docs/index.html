@@ -292,8 +292,8 @@
       position: absolute;
       top: 10px;
       left: 10px;
-      width: 32px;
-      height: 32px;
+      width: 42px;
+      height: 42px;
       background: rgba(26,22,18,0.55);
       border: none;
       border-radius: 50%;
@@ -308,8 +308,8 @@
     }
 
     .fav-btn-card img {
-      width: 16px;
-      height: 16px;
+      width: 24px;
+      height: 24px;
       object-fit: contain;
       opacity: 0.6;
       transition: opacity 0.2s, transform 0.2s var(--ease-out);
@@ -558,6 +558,8 @@
         const resp = await fetch('./products.json');
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         allProducts = await resp.json();
+        // Shuffle so the grid shows in a different order each visit
+        allProducts = allProducts.sort(() => Math.random() - 0.5);
         buildFilters();
         updateStats();
         renderGrid();
