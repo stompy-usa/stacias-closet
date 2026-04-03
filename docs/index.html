@@ -787,6 +787,9 @@
         : p.image_url;
       const isPlaceholder = !imgSrc || imgSrc.startsWith('data:') || imgSrc.includes('placeholder');
       const finalSrc = isPlaceholder ? './favicon.png' : imgSrc;
+      if (isPlaceholder && p.site === 'abercrombie' && p.image_url) {
+        console.warn('Placeholder triggered for A&F product with image:', p.name, '| image_url:', p.image_url, '| imgSrc:', imgSrc);
+      }
       const favorited = isFavorited(p.product_url);
 
       a.innerHTML = `
