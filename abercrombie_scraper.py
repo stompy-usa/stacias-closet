@@ -59,10 +59,19 @@ async def scrape_category(browser: Browser, category_slug: str, category_label: 
             logger.warning(f'[abercrombie] No product links found on {url}')
             return []
 
-        # Scroll to load all lazy-loaded products
-        for _ in range(5):
-            await page.evaluate('window.scrollBy(0, window.innerHeight * 1.5)')
-            await page.wait_for_timeout(1200)
+        # Scroll to trigger all lazy-loaded images
+        # Slower scroll with longer pauses gives images time to swap in
+        for _ in range(8):
+            await page.evaluate('window.scrollBy(0, window.innerHeight)')
+            await page.wait_for_timeout(2000)  # 2s per scroll = images have time to load
+        # Scroll back to top then do a final full-page sweep
+        await page.evaluate('window.scrollTo(0, 0)')
+        await page.wait_for_timeout(1000)
+        for _ in range(8):
+            await page.evaluate('window.scrollBy(0, window.innerHeight)')
+            await page.wait_for_timeout(1500)
+        await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+        await page.wait_for_timeout(3000)  # final settle time
 
         # Extract all product data from DOM
         raw_products = await page.evaluate('''() => {
@@ -101,13 +110,23 @@ async def scrape_category(browser: Browser, category_slug: str, category_label: 
                 if (!entry.img) {
                     const card = a.closest("[class*='product']") || a.parentElement;
                     const img  = card?.querySelector("img[src*='img.abercrombie.com']") ||
+                                 card?.querySelector("img[data-src*='img.abercrombie.com']") ||
                                  card?.querySelector("img");
                     if (img) {
-                        entry.img = img.src || img.dataset.src || "";
-                        // Upgrade to high-res
-                        entry.img = entry.img.replace("product-xsmall", "product-large")
-                                             .replace("product-small",  "product-large")
-                                             .replace("product-medium", "product-large");
+                        // src may be a base64 placeholder if image is lazy-loaded
+                        // check data-src, data-lazy-src, and srcset as fallbacks
+                        const candidates = [
+                            img.dataset.src,
+                            img.dataset.lazySrc,
+                            img.dataset.originalSrc,
+                            img.src,
+                            (img.srcset || img.dataset.srcset || "").split(",")[0].trim().split(" ")[0],
+                        ];
+                        const realUrl = candidates.find(c => c && !c.startsWith("data:") && c.includes("abercrombie")) || "";
+                        entry.img = realUrl
+                            .replace("product-xsmall", "product-large")
+                            .replace("product-small",  "product-large")
+                            .replace("product-medium", "product-large");
                     }
                 }
             });
