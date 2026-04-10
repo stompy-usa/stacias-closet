@@ -190,18 +190,33 @@
       flex-wrap: wrap;
     }
     @media (max-width: 600px) {
-      .toolbar {
-        top: 52px;
-        padding: 8px 12px;
-        gap: 6px;
-        flex-wrap: wrap;
-      }
+      .toolbar { top: 52px; padding: 8px 12px; gap: 6px; flex-wrap: wrap; align-items: center; }
       .toolbar-label { display: none; }
       .toolbar-sep { display: none; }
-      .search-wrap { width: 100%; margin-left: 0; order: 10; }
+      .filter-toggle {
+        display: inline-flex;
+        align-items: center;
+        background: transparent;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        font-family: var(--font-body);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .filter-toggle.active { background: var(--ink); border-color: var(--ink); color: var(--cream); }
+      .filter-row { display: none; width: 100%; }
+      .toolbar.filters-open .filter-row { display: flex; flex-wrap: wrap; gap: 6px; }
+      .toolbar.filters-open #site-filters { display: contents !important; }
+      .search-wrap { flex: 1; min-width: 0; margin-left: 0; }
       .search-input { width: 100%; box-sizing: border-box; }
       .filter-btn { font-size: 10px; padding: 5px 10px; white-space: nowrap; }
     }
+
+    .filter-toggle { display: none; }
 
     .toolbar-label {
       font-size: 10px;
@@ -527,15 +542,18 @@
   </section>
 
   <div class="toolbar" id="toolbar">
-    <span class="toolbar-label">Filter</span>
-    <button class="filter-btn active" id="all-sources-btn" data-filter-type="site" data-filter-value="">All Sources</button>
-    <div class="toolbar-sep"></div>
-    <div id="site-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
-    <div class="toolbar-sep"></div>
-    <button class="filter-btn fav-btn" id="fav-filter-btn">
-      <img src="./favicon.png" alt="cherry" />
-      Favorites
-    </button>
+    <button class="filter-toggle" id="filter-toggle">Filters ▾</button>
+    <div class="filter-row">
+      <span class="toolbar-label">Filter</span>
+      <button class="filter-btn active" id="all-sources-btn" data-filter-type="site" data-filter-value="">All Sources</button>
+      <div class="toolbar-sep"></div>
+      <div id="site-filters" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
+      <div class="toolbar-sep"></div>
+      <button class="filter-btn fav-btn" id="fav-filter-btn">
+        <img src="./favicon.png" alt="cherry" />
+        Favorites
+      </button>
+    </div>
     <div class="search-wrap">
       <input class="search-input" type="text" id="search" placeholder="Search pieces…" />
       <span class="search-icon">⌕</span>
@@ -641,6 +659,7 @@
           .forEach(b => b.classList.remove('active'));
         document.getElementById('all-sources-btn').classList.add('active');
         renderGrid();
+        closeMobileFilters();
       });
 
       // Favorites filter button
@@ -659,6 +678,7 @@
           document.querySelector('.filter-btn[data-filter-value=""]')?.classList.add('active');
         }
         renderGrid();
+        closeMobileFilters();
       });
     }
 
@@ -720,6 +740,7 @@
         }
 
         renderGrid();
+        closeMobileFilters();
       });
       return btn;
     }
@@ -736,6 +757,21 @@
         renderGrid();
       }, 200);
     });
+
+    // ── Mobile filter toggle ─────────────────────────────────────────
+    const filterToggleBtn = document.getElementById('filter-toggle');
+    const toolbarEl       = document.getElementById('toolbar');
+    filterToggleBtn.addEventListener('click', () => {
+      const open = toolbarEl.classList.toggle('filters-open');
+      filterToggleBtn.classList.toggle('active', open);
+      filterToggleBtn.textContent = open ? 'Filters ▲' : 'Filters ▾';
+    });
+    function closeMobileFilters() {
+      if (window.innerWidth > 600) return;
+      toolbarEl.classList.remove('filters-open');
+      filterToggleBtn.classList.remove('active');
+      filterToggleBtn.textContent = 'Filters ▾';
+    }
 
     // ── Render ────────────────────────────────────────────────────────
     function filtered() {
