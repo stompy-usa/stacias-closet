@@ -2,14 +2,14 @@
 # Entry point for the Stacia's Closet scraper.
 #
 # Usage:
-#   python run.py           — run on schedule (every REFRESH_INTERVAL_SECONDS)
-#   python run.py --once    — run once and exit
-#   python run.py --site wayward   — scrape one site only, then exit
+#   python run.py                    — run on schedule
+#   python run.py --once             — run once and exit
+#   python run.py --site abercrombie — scrape one site only, then exit
+#   python run.py --skip-abercrombie — skip A&F (used in GitHub Actions)
 
 import asyncio
 import argparse
 import logging
-import sys
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
@@ -24,15 +24,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Tracks how many times the scheduler has fired, used to throttle heavy sites.
 _cycle_count = 0
 
 
+# ---------------------------------------------------------------------------
+# Core scrape cycle
+# ---------------------------------------------------------------------------
+
 def _sites_for_cycle(cycle: int) -> dict:
-    """
-    Wayward runs every cycle.
-    Aritzia + A&F run every HEAVY_SITE_CYCLE_INTERVAL cycles.
-    """
     selected = {}
     for key, cfg in SITES.items():
         if key == "wayward":
@@ -42,7 +41,7 @@ def _sites_for_cycle(cycle: int) -> dict:
     return selected
 
 
-async def run_scrape(site_key: str | None = None) -> None:
+async def run_scrape(site_key: str | None = None, all_sites: bool = False) -> None:
     global _cycle_count
     _cycle_count += 1
 
@@ -51,27 +50,39 @@ async def run_scrape(site_key: str | None = None) -> None:
             logger.error(f"Unknown site key: {site_key}. Options: {list(SITES.keys())}")
             return
         sites = {site_key: SITES[site_key]}
+    elif all_sites:
+        sites = SITES
     else:
         sites = _sites_for_cycle(_cycle_count)
 
     site_names = [SITES[k]["name"] for k in sites]
     logger.info(f"=== Scrape cycle {_cycle_count} — sites: {', '.join(site_names)} ===")
 
+    # Step 1: scrape all sites in scope
     products = await scrape_all(sites)
 
     if products:
         saved = upsert_products(products)
-        exported = export_json()
-        logger.info(f"Saved/updated {saved} products. DB total: {product_count()}. Exported {exported} to docs/products.json")
+        logger.info(f"Saved/updated {saved} products. DB total: {product_count()}")
     else:
         logger.warning("No products returned this cycle.")
 
+    # Step 2: export clean JSON covering all sites
+    exported = export_json()
+    logger.info(f"Exported {exported} products to docs/products.json")
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
 
 async def main():
     parser = argparse.ArgumentParser(description="Stacia's Closet scraper")
     parser.add_argument("--once", action="store_true", help="Run once and exit")
-    parser.add_argument("--site", type=str, default=None, help="Scrape one site only (wayward | aritzia | abercrombie)")
-    parser.add_argument("--skip-abercrombie", action="store_true", help="Skip Abercrombie (useful in CI)")
+    parser.add_argument("--site", type=str, default=None,
+                        help="Scrape one site only (wayward | aritzia | abercrombie)")
+    parser.add_argument("--skip-abercrombie", action="store_true",
+                        help="Skip Abercrombie (useful in CI)")
     args = parser.parse_args()
 
     init_db()
@@ -79,7 +90,6 @@ async def main():
 
     if args.once or args.site:
         if args.skip_abercrombie and not args.site:
-            # Remove abercrombie from SITES for this run
             filtered_sites = {k: v for k, v in SITES.items() if k != 'abercrombie'}
             import config as _cfg
             _original = _cfg.SITES.copy()
@@ -87,25 +97,19 @@ async def main():
             await run_scrape(args.site)
             _cfg.SITES = _original
         else:
-            await run_scrape(args.site)
+            # --once with no specific site runs all 3
+            await run_scrape(args.site, all_sites=not args.site)
         return
 
     # Scheduled mode
     logger.info(f"Scheduler starting. Refresh every {REFRESH_INTERVAL_SECONDS // 60} minutes.")
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(
-        run_scrape,
-        "interval",
-        seconds=REFRESH_INTERVAL_SECONDS,
-        id="scrape_job",
-    )
+    scheduler.add_job(run_scrape, "interval", seconds=REFRESH_INTERVAL_SECONDS, id="scrape_job")
     scheduler.start()
-
-    # Run immediately on startup rather than waiting for the first interval
     await run_scrape()
 
     try:
-        await asyncio.Event().wait()  # run forever
+        await asyncio.Event().wait()
     except (KeyboardInterrupt, SystemExit):
         logger.info("Shutting down scheduler.")
         scheduler.shutdown()

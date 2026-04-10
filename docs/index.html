@@ -65,6 +65,7 @@
       header { padding: 0 16px; height: 52px; }
       .site-title { font-size: 22px; }
       .header-meta { display: none; }
+      .anf-staleness { display: none; }
     }
 
     .site-title {
@@ -87,6 +88,20 @@
       font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+    }
+
+    .anf-staleness {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.10em;
       text-transform: uppercase;
     }
 
@@ -492,7 +507,10 @@
       <img src="./favicon.png" alt="cherry" />
       Stacia's <span>Closet</span>
     </a>
-    <span class="header-meta">Curated Vintage &amp; Contemporary</span>
+    <div class="header-right">
+      <span class="header-meta">Curated Vintage &amp; Contemporary</span>
+      <span class="anf-staleness" id="anf-staleness"></span>
+    </div>
   </header>
 
   <section class="hero">
@@ -656,6 +674,16 @@
         const d = new Date(latest);
         document.getElementById('stat-updated').textContent =
           'Updated ' + d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+      }
+      const anfLatest = allProducts
+        .filter(p => p.site === 'abercrombie' && p.scraped_at)
+        .map(p => p.scraped_at)
+        .sort()
+        .pop();
+      if (anfLatest) {
+        const days = Math.floor((Date.now() - new Date(anfLatest)) / 86400000);
+        document.getElementById('anf-staleness').textContent =
+          'A&F: ' + (days === 0 ? 'updated today' : days + (days === 1 ? ' day ago' : ' days ago'));
       }
     }
 
