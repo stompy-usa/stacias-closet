@@ -36,7 +36,7 @@ def _sites_for_cycle(cycle: int) -> dict:
     for key, cfg in SITES.items():
         if key == "wayward":
             selected[key] = cfg
-        elif cycle % HEAVY_SITE_CYCLE_INTERVAL == 0:
+        elif key != "abercrombie" and cycle % HEAVY_SITE_CYCLE_INTERVAL == 0:
             selected[key] = cfg
     return selected
 
@@ -67,8 +67,9 @@ async def run_scrape(site_key: str | None = None, all_sites: bool = False) -> No
     else:
         logger.warning("No products returned this cycle.")
 
-    # Step 2: export clean JSON covering all sites
-    exported = export_json()
+    # Step 2: export clean JSON — exclude A&F unless this was an explicit A&F scrape
+    _exclude = None if site_key == "abercrombie" else ["abercrombie"]
+    exported = export_json(exclude_sites=_exclude)
     logger.info(f"Exported {exported} products to docs/products.json")
 
 

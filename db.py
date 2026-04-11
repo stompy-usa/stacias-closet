@@ -70,7 +70,11 @@ def upsert_products(products: list[dict]) -> int:
         return cursor.rowcount
 
 
-def get_products(site: str | None = None, category: str | None = None) -> list[dict]:
+def get_products(
+    site: str | None = None,
+    category: str | None = None,
+    exclude_sites: list[str] | None = None,
+) -> list[dict]:
     """
     Fetch products from the DB, optionally filtered by site and/or category.
     Returns a list of plain dicts sorted by scraped_at descending.
@@ -83,6 +87,10 @@ def get_products(site: str | None = None, category: str | None = None) -> list[d
     if category:
         query += " AND category = ?"
         params.append(category)
+    if exclude_sites:
+        placeholders = ",".join("?" * len(exclude_sites))
+        query += f" AND site NOT IN ({placeholders})"
+        params.extend(exclude_sites)
     query += " ORDER BY scraped_at DESC"
 
     with _connect() as conn:
@@ -110,14 +118,15 @@ def product_count() -> int:
     return row["c"]
 
 
-def export_json(path: str = "docs/products.json") -> int:
+def export_json(path: str = "docs/products.json", exclude_sites: list[str] | None = None) -> int:
     """
-    Export all products to a static JSON file for GitHub Pages.
+    Export products to a static JSON file for GitHub Pages.
+    Pass exclude_sites to omit specific sites from the export.
     Returns the number of products exported.
     """
     import json, os
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    products = get_products()
+    products = get_products(exclude_sites=exclude_sites)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False)
     return len(products)
