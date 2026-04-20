@@ -118,15 +118,34 @@ def product_count() -> int:
     return row["c"]
 
 
-def export_json(path: str = "docs/products.json", exclude_sites: list[str] | None = None) -> int:
+def export_json(path: str = "docs/products.json", preserve_sites: list[str] | None = None) -> int:
     """
     Export products to a static JSON file for GitHub Pages.
-    Pass exclude_sites to omit specific sites from the export.
+
+    If *preserve_sites* is given, products from those sites that already
+    exist in the JSON file are kept even when they are not in the current
+    DB (e.g. A&F products loaded manually that should survive CI runs
+    where only Wayward/Aritzia are scraped).
+
     Returns the number of products exported.
     """
     import json, os
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    products = get_products(exclude_sites=exclude_sites)
+    products = get_products()
+
+    if preserve_sites:
+        db_sites = {p["site"] for p in products}
+        missing = [s for s in preserve_sites if s not in db_sites]
+        if missing and os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    existing = json.load(f)
+                for p in existing:
+                    if p.get("site") in missing:
+                        products.append(p)
+            except (json.JSONDecodeError, OSError):
+                pass
+
     with open(path, "w", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False)
     return len(products)

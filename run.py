@@ -67,9 +67,11 @@ async def run_scrape(site_key: str | None = None, all_sites: bool = False) -> No
     else:
         logger.warning("No products returned this cycle.")
 
-    # Step 2: export clean JSON — exclude A&F unless this was an explicit A&F scrape
-    _exclude = None if site_key == "abercrombie" else ["abercrombie"]
-    exported = export_json(exclude_sites=_exclude)
+    # Step 2: export JSON — preserve A&F products from the existing file
+    # when A&F wasn't part of this scrape, so manually-loaded products
+    # persist until the next explicit A&F refresh
+    _preserve = None if "abercrombie" in sites else ["abercrombie"]
+    exported = export_json(preserve_sites=_preserve)
     logger.info(f"Exported {exported} products to docs/products.json")
 
 
