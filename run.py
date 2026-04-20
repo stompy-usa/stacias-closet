@@ -67,11 +67,13 @@ async def run_scrape(site_key: str | None = None, all_sites: bool = False) -> No
     else:
         logger.warning("No products returned this cycle.")
 
-    # Step 2: export JSON — preserve A&F products from the existing file
-    # when A&F wasn't part of this scrape, so manually-loaded products
-    # persist until the next explicit A&F refresh
-    _preserve = None if "abercrombie" in sites else ["abercrombie"]
-    exported = export_json(preserve_sites=_preserve)
+    # Step 2: export JSON — preserve products from any site that wasn't
+    # part of this scrape, so the static file keeps whatever was pushed
+    # by the other workflow (CI keeps A&F; manual A&F runs keep CI's
+    # Wayward/Aritzia).
+    all_site_keys = list(SITES.keys())
+    _preserve = [k for k in all_site_keys if k not in sites]
+    exported = export_json(preserve_sites=_preserve or None)
     logger.info(f"Exported {exported} products to docs/products.json")
 
 

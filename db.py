@@ -122,29 +122,30 @@ def export_json(path: str = "docs/products.json", preserve_sites: list[str] | No
     """
     Export products to a static JSON file for GitHub Pages.
 
-    If *preserve_sites* is given, products from those sites that already
-    exist in the JSON file are kept even when they are not in the current
-    DB (e.g. A&F products loaded manually that should survive CI runs
-    where only Wayward/Aritzia are scraped).
+    If *preserve_sites* is given, products from those sites are read from
+    the existing JSON file instead of the DB. This lets a scrape that
+    only touched one site leave the other sites' freshest published data
+    intact — e.g. a manual A&F run keeps CI's latest Wayward/Aritzia,
+    and CI's Wayward/Aritzia run keeps manually-loaded A&F.
 
     Returns the number of products exported.
     """
     import json, os
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    products = get_products()
 
     if preserve_sites:
-        db_sites = {p["site"] for p in products}
-        missing = [s for s in preserve_sites if s not in db_sites]
-        if missing and os.path.exists(path):
+        products = [p for p in get_products() if p["site"] not in preserve_sites]
+        if os.path.exists(path):
             try:
                 with open(path, "r", encoding="utf-8") as f:
                     existing = json.load(f)
                 for p in existing:
-                    if p.get("site") in missing:
+                    if p.get("site") in preserve_sites:
                         products.append(p)
             except (json.JSONDecodeError, OSError):
                 pass
+    else:
+        products = get_products()
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False)
